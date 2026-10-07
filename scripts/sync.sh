@@ -2,7 +2,7 @@
 
 REPO_DIR="/Users/zhuzhonghua/work-hour-reminder"
 TASK_DIR="/Users/zhuzhonghua/work/work/tasks/monthly"
-MONTH=$(date +%Y-%m)
+MONTH="${1:-$(date +%Y-%m)}"
 SOURCE_FILE="$TASK_DIR/$MONTH.md"
 TARGET_FILE="$REPO_DIR/data/$MONTH.md"
 
